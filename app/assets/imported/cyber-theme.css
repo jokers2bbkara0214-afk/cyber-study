@@ -1,0 +1,15 @@
+/* CYBER STUDY imported lesson visual skin. Source teaching text, diagrams and quizzes are unchanged. */
+:root{
+  --ink:#263d46;--ink-soft:#527078;--bg:#eef6f5;--paper:#ffffff;
+  --line:#cfe0dd;--blue:#087e85;--blue-deep:#0a6067;--blue-soft:#e0f3f1;
+  --green:#157c66;--green-soft:#e5f5ef;--navy-soft:#eaf2f2;
+}
+body{background:var(--bg);color:var(--ink)}
+.site-head{background:linear-gradient(125deg,#103d49 0%,#176a72 70%,#178a88 100%)}
+.site-head .crumb a{color:#d6fffa}.site-head .lede{color:#e0f7f5}
+.section,.progress-wrap{box-shadow:0 10px 25px rgba(12,56,65,.045)}
+.pbar>span{background:linear-gradient(90deg,#149b9a,#32b88c)}
+.pager .cur{color:#0a6067}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #159d98;outline-offset:2px}
+[data-cs4-unavailable]{opacity:.48;cursor:not-allowed;text-decoration:line-through}
+@media(max-width:600px){main{padding:0 12px 48px}.section{padding:18px 14px}.site-head{padding:18px 12px}}

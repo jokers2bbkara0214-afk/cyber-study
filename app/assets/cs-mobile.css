@@ -1,0 +1,16 @@
+/* CYBER STUDY: phone / installed-app adjustments (additive). */
+#cs-banner{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(16px + env(safe-area-inset-bottom));z-index:30;display:flex;align-items:center;gap:12px;padding:10px 12px 10px 16px;border-radius:12px;background:var(--panel2,#24414a);border:1px solid var(--cyan,#35c9ba);color:var(--text,#e6f2f1);box-shadow:0 10px 30px #0008;font-size:13px;max-width:calc(100vw - 32px)}
+#cs-banner[hidden]{display:none}
+#cs-banner button{min-height:40px;padding:0 14px;border-radius:9px;border:0;background:var(--cyan,#35c9ba);color:#101a20;font-weight:700}
+@media (display-mode: standalone){
+  .topbar{padding-top:env(safe-area-inset-top);height:calc(66px + env(safe-area-inset-top))}
+  footer{padding-bottom:calc(15px + env(safe-area-inset-bottom))}
+}
+@media (max-width:800px){
+  html{-webkit-text-size-adjust:100%}
+  .nav-btn{min-height:48px}
+  .btn{min-height:44px}
+  .choice{min-height:48px}
+  .sidebar{padding-top:calc(26px + env(safe-area-inset-top))}
+  .cs4-import-frame{min-height:70vh}
+}

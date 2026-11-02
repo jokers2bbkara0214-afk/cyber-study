@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.exe
+# 第三者の教材（公開リポジトリに載せない。Supabaseの非公開保管庫から各端末に保存する）
+app/lessons/
+app/assets/reference/
+app/assets/imported/common.css
+app/assets/imported/foundation.css
+app/assets/imported/foundation.js
+app/assets/imported/learning-asides.js
+app/assets/imported/learning-progress.js

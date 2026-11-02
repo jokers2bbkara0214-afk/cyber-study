@@ -1,0 +1,27 @@
+CYBER STUDY 4.0 | 2026-10-25
+=== Baseline regression ===
+PASS all static script/style references + 18 retained reference images
+PASS 8 main navigation items and home screen
+PASS 66 cards / 14 lessons / 1200 original questions / 200 SQL missions / 3 incidents / 6 sourced adapted questions
+PASS existing flashcards flip and category selector
+PASS existing 14-lesson navigation and 18 reference image tags
+PASS SQL read-only guard + incident 2-step completion + virtual defense/security entry points
+PASS 6 IPA-sourced adapted questions + original 1200-question mode retained
+PASS note saved + 7-day activity chart + official-exam activity
+PASS original state key preserved and 8-menu navigation after operations
+PASS mobile 390px home without page overflow
+PASS no uncaught JavaScript exceptions during tested flows
+=== 2026-10-24 regression ===
+PASS all 14 lessons show source audit and original navigation remains
+PASS 8-bit converter: 0/13/255, decimal invalid, reverse valid/invalid, original quiz and images
+PASS binary-search stepper: found/missing/reset, original lesson images retained
+PASS 100 fallback SQL model answers and all 3 simulated incident scenarios
+PASS JSON backup export/import roundtrip: note + sourced exam result + auxiliary included
+PASS 390px mobile textbook labs without document horizontal overflow
+PASS no uncaught JavaScript errors
+=== 2026-10-25 regression ===
+PASS original 6 functions and 14-lesson index preserved; imported 15-lesson navigation/search/mark works
+PASS import completion and source/8-bit progress roundtrip through JSON backup
+PASS no uncaught parent JavaScript exceptions
+PASS all 15 source HTML pages: local dependencies, JS initialization; lesson 1-1 counter and progress checkbox
+PASS imported index at 390px without parent horizontal overflow

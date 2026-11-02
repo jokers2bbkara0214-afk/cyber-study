@@ -1,0 +1,18 @@
+PASS all static script/style references + 18 retained reference images
+PASS 8 main navigation items and home screen
+PASS 66 cards / 14 lessons / 1200 original questions / 200 SQL missions / 3 incidents / 6 sourced adapted questions
+PASS existing flashcards flip and category selector
+PASS existing 14-lesson navigation and 18 reference image tags
+PASS SQL read-only guard + incident 2-step completion + virtual defense/security entry points
+PASS 6 IPA-sourced adapted questions + original 1200-question mode retained
+PASS note saved + 7-day activity chart + official-exam activity
+PASS original state key preserved and 8-menu navigation after operations
+PASS mobile 390px home without page overflow
+PASS no uncaught JavaScript exceptions during tested flows
+PASS all 14 lessons show source audit and original navigation remains
+PASS 8-bit converter: 0/13/255, decimal invalid, reverse valid/invalid, original quiz and images
+PASS binary-search stepper: found/missing/reset, original lesson images retained
+PASS 100 fallback SQL model answers and all 3 simulated incident scenarios
+PASS JSON backup export/import roundtrip: note + sourced exam result + auxiliary included
+PASS 390px mobile textbook labs without document horizontal overflow
+PASS no uncaught JavaScript errors

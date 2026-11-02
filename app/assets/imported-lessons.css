@@ -1,0 +1,22 @@
+/* Imported lesson viewer. Existing textbook remains available as a separate tab. */
+.cs4-import-tabs{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:20px 0;padding:12px;border:1px solid var(--stroke);border-radius:12px;background:var(--theme-card)}
+.cs4-import-tabs .btn[aria-pressed="true"]{background:var(--cyan);color:#092c33;border-color:var(--cyan);font-weight:800}
+.cs4-import-tabs small{color:var(--muted);font-size:12px}
+.cs4-import-grid{display:grid;grid-template-columns:minmax(195px,.66fr) minmax(0,1.75fr);gap:18px;align-items:start}
+.cs4-import-list{display:flex;flex-direction:column;gap:4px;margin:12px 0}
+.cs4-import-group{font-size:12px;color:var(--cyan);font-weight:800;letter-spacing:.04em;margin:14px 0 6px}
+.cs4-import-item{display:flex;gap:10px;align-items:center;width:100%;text-align:left;min-height:44px;border:1px solid transparent;background:transparent;border-radius:8px;color:var(--text);padding:10px 9px;cursor:pointer}
+.cs4-import-item:hover{background:var(--theme-hover)}
+.cs4-import-item[aria-current="page"]{background:var(--theme-hover);border-color:var(--cyan)}
+.cs4-import-item span{flex:1;min-width:0;overflow-wrap:anywhere;font-size:13px}
+.cs4-import-item b{color:var(--cyan);font-size:11px;min-width:32px}
+.cs4-import-item i{color:var(--green);font-style:normal}
+.cs4-import-frame{display:block;width:100%;height:800px;border:1px solid var(--stroke);border-radius:12px;background:#eef6f5}
+.cs4-import-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0}
+.cs4-import-actions .btn{max-width:100%}
+.cs4-import-summary{line-height:1.85;color:var(--theme-soft);font-size:13px}
+.cs4-import-status{margin-top:12px;border-left:3px solid var(--orange);padding:8px 12px;background:var(--theme-card);font-size:12px;color:var(--theme-soft)}
+@media(max-width:950px){.cs4-import-grid{grid-template-columns:1fr}.cs4-import-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.cs4-import-frame{height:72vh;min-height:520px}}
+@media(max-width:520px){.cs4-import-list{grid-template-columns:1fr}.cs4-import-tabs .btn{flex:1}.cs4-import-frame{height:68vh;min-height:500px}}
+.cs4-legacy-gallery{margin:16px 0;border:1px solid var(--stroke);border-radius:10px;padding:10px;background:var(--theme-card)}
+.cs4-legacy-gallery>summary{cursor:pointer;color:var(--muted);font-size:13px}
