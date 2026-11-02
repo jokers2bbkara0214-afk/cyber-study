@@ -45,6 +45,15 @@
     if (IGNORE(key)) return;
     if (!meta.dirtyAt[key]) { meta.dirtyAt[key] = new Date().toISOString(); saveMeta(); }
     emit();
+    scheduleSync();
+  }
+
+  // Send changes a few seconds after the last edit, so the other device gets them without closing the app.
+  let syncTimer = null;
+  function scheduleSync() {
+    if (!adapter) return;
+    clearTimeout(syncTimer);
+    syncTimer = setTimeout(() => sync(), 3000);
   }
 
   // Record the moment of every local write in this window.
@@ -185,6 +194,8 @@
     _hash: hash
   });
 
+  // While the app is open, also check for the other device's changes every minute.
+  setInterval(() => { if (document.visibilityState === 'visible') sync(); }, 60000);
   // Sync when the app comes back to the foreground or the network returns.
   document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') sync(); else if (adapter) sync(); });
   window.addEventListener('online', () => sync());
