@@ -2,5 +2,5 @@
    service_role / secret key は絶対にここへ書かないこと。 */
 window.CS_CONFIG = {
   supabaseUrl: 'https://dgigtlqcphmmyihzxwks.supabase.co',
-  supabaseAnonKey: ''
+  supabaseAnonKey: 'sb_publishable_Bj8XPJjo4AnlrfKJZ_vq-g_zWI1-NFq'
 };
